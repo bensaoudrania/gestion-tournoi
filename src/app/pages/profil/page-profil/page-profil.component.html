@@ -1,0 +1,58 @@
+<style>
+  /* Custom CSS for adjusting the card height */
+  .custom-card {
+    height: 400px; /* You can change this value as needed */
+  }
+</style>
+
+<div class="container">
+  <div class="row m-4">
+    <div class="card col-md-5 text-center custom-card mr-3">
+      <div class="col">
+        <div class="mb-3 mt-3">
+          <img
+            src="assets/client.png"
+            width="200px"
+            height="200px"
+            class="rounded-circle"
+          />
+        </div>
+        <div>
+          <h2 class="mb-3">Nom Prenom</h2>
+          <small class="form-text text-muted ">Adresse, ville, 12345</small>
+        </div>
+        <div class="d-flex justify-content-between mt-3">
+          <button type="button" class="btn btn-primary"><i class="fas fa-pencil-alt"></i>&nbsp;Modifier le profil</button>
+          <button type="button" class="btn btn-warning" (click)="modifierMotDePasse()"><i class="fas fa-lock"></i>&nbsp;
+            Changer le mot de passe</button>
+        </div>
+      </div>
+    </div>
+    <div class="card col-md-7">
+      <table class="table">
+        <tbody>
+          <tr>
+            <th scope="row">Nom complet</th>
+            <td>nom prenom</td>
+          </tr>
+          <tr>
+            <th scope="row">Email</th>
+            <td>adresse@email.com</td>
+          </tr>
+          <tr>
+            <th scope="row">Telephone</th>
+            <td>011 22 33 44 55 66</td>
+          </tr>
+          <tr>
+            <th scope="row">Adresse</th>
+            <td>Adresse, Ville, 12345</td>
+          </tr>
+          <tr>
+            <th scope="row">Entreprise</th>
+            <td>Nom entreprise</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
